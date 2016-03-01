@@ -7,7 +7,7 @@ class beaker (
   }
   package { 'beaker':
     ensure   => present,
-    provider => puppet_gem,
+    provider => gem,
     require  => Package[$beaker_packages],
   }
 }
